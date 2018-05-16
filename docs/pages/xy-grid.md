@@ -307,20 +307,22 @@ To start, add `.grid-frame` to the grid. This sets the grid to be 100vh (the ful
   
   Given the `.medium-grid-frame` example below, you'll want to take care to hide overflow body content for medium and larger screens only.
   
+  If using SCSS, then this:
+  
   ```scss_example
   body {
   @include breakpoint(medium) {
     overflow: hidden;
-   }
+    }
   }
   ```
   
+  If using CSS, then this:
+  
   ```css_example
   @media print, screen and (min-width: 40em) {
-  /* line 395, resources/modules.noSync/node_modules/foundation-sites/scss/xy-grid/_classes.scss */
-  .grid-y.medium-grid-frame {
     overflow: hidden;
-  }
+   }
  }
  ```
 </div>
