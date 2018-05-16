@@ -304,25 +304,7 @@ To start, add `.grid-frame` to the grid. This sets the grid to be 100vh (the ful
 
 <div class="callout warning">
   Please note to use `.grid-margin-x` or `.grid-margin-y` with `.grid-frame` you need to hide the overflow on the body like so: `body {overflow: hidden;}`. However, take care not to unintentionally hide overflow body content on small screens when using `.medium-grid-frame`.
-  
-  If using SCSS, then this:
-  
-  ```scss
-  body {
-   @include breakpoint(medium) {
-     overflow: hidden;
-    }
-  }
-  ```
-  
-  If using CSS, then this:
-  
-  ```css
-  @media print, screen and (min-width: 40em) {
-    overflow: hidden;
-   }
- }
- ```
+ 
 </div>
 
 Here's an example of what you can do:
