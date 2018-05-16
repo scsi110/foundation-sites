@@ -311,8 +311,8 @@ To start, add `.grid-frame` to the grid. This sets the grid to be 100vh (the ful
   
   ```scss
   body {
-  @include breakpoint(medium) {
-    overflow: hidden;
+   @include breakpoint(medium) {
+     overflow: hidden;
     }
   }
   ```
