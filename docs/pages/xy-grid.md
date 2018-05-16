@@ -304,6 +304,25 @@ To start, add `.grid-frame` to the grid. This sets the grid to be 100vh (the ful
 
 <div class="callout warning">
   Please note to use `.grid-margin-x` or `.grid-margin-y` with `.grid-frame` you need to hide the overflow on the body like so: `body {overflow: hidden;}`.
+  
+  Given the `.medium-grid-frame` example below, you'll want to take care to hide overflow body content for medium and larger screens only.
+  
+  ```scss_example
+  body {
+  @include breakpoint(medium) {
+    overflow: hidden;
+   }
+  }
+  ```
+  
+  ```css_example
+  @media print, screen and (min-width: 40em) {
+  /* line 395, resources/modules.noSync/node_modules/foundation-sites/scss/xy-grid/_classes.scss */
+  .grid-y.medium-grid-frame {
+    overflow: hidden;
+  }
+ }
+ ```
 </div>
 
 Here's an example of what you can do:
