@@ -303,9 +303,7 @@ The XY grid incorporates the grid frame from Foundation for Apps plus many other
 To start, add `.grid-frame` to the grid. This sets the grid to be 100vh (the full height of the browser window).
 
 <div class="callout warning">
-  Please note to use `.grid-margin-x` or `.grid-margin-y` with `.grid-frame` you need to hide the overflow on the body like so: `body {overflow: hidden;}`.
-  
-  Given the `.medium-grid-frame` example below, you'll want to take care to hide overflow body content for medium and larger screens only.
+  Please note to use `.grid-margin-x` or `.grid-margin-y` with `.grid-frame` you need to hide the overflow on the body like so: `body {overflow: hidden;}`. However, take care not to unintentionally hide overflow body content on small screens when using `.medium-grid-frame`.
   
   If using SCSS, then this:
   
