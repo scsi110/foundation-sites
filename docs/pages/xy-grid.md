@@ -309,7 +309,7 @@ To start, add `.grid-frame` to the grid. This sets the grid to be 100vh (the ful
   
   If using SCSS, then this:
   
-  ```scss_example
+  ```scss
   body {
   @include breakpoint(medium) {
     overflow: hidden;
@@ -319,7 +319,7 @@ To start, add `.grid-frame` to the grid. This sets the grid to be 100vh (the ful
   
   If using CSS, then this:
   
-  ```css_example
+  ```css
   @media print, screen and (min-width: 40em) {
     overflow: hidden;
    }
